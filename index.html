@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnny's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="logo"><h1>Johnny</h1></div>
+            <nav>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>工程師</p>
+                <h1>嗨，我是<span>Johny</span> 來自台灣</h1> 
+            </div>          
+        </div>
+    </div>
+<!------------------about--------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                    
+                </div>
+                    
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> 這是我的關於我
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>java</span><br>製作圖書館操作系統</li>
+                            <li><span>html css</span><br>製作個人網站</li>
+                            <li><span>sql</span><br>設計資料庫</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-Curren</span><br>文大助教</li>
+                            <li><span>2020-2024</span><br>外送員</li>
+                            <li><span>2016-2021</span><br>盲盒店員</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>東海高中資訊科</li>
+                            <!-- <li><span>html css</span><br>製作個人網站</li>
+                            <li><span>sql</span><br>設計資料庫</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------about--------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>網頁設計</h2>
+                    <p>使用三劍客來設計網頁</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>UI設計</h2>
+                    <p>使用三劍客來設計網頁</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>APP設計</h2>
+                    <p>使用三劍客來設計網頁</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------portfolio--------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/background.jpg" alt="Project 1">
+                    <div class="layer">
+                        <h3>圖書館管理系統</h3>
+                        <p>使用 Java 開發的圖書館管理系統，包含借書、還書、查詢等功能。採用 MVC 架構設計，提供友善的使用者介面。</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/background.jpg" alt="Project 2">
+                    <div class="layer">
+                        <h3>個人作品集網站</h3>
+                        <p>使用 HTML、CSS 和 JavaScript 打造的響應式個人網站，展示個人技能和作品集。</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/background.jpg" alt="Project 3">
+                    <div class="layer">
+                        <h3>資料庫設計專案</h3>
+                        <p>設計並實作完整的資料庫系統，包含正規化設計、查詢優化和數據分析功能。</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">查看更多</a>
+        </div>
+    </div>
+
+    <!------------------contact--------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">聯絡我</h1>
+                    <p><i class="fas fa-paper-plane"></i> johnny@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 0912-345-678</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">下載履歷</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="您的姓名" required>
+                        <input type="email" name="Email" placeholder="您的信箱" required>
+                        <textarea name="Message" rows="6" placeholder="您的訊息"></textarea>
+                        <button type="submit" class="btn btn2">送出</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Johnny. Made with <i class="fas fa-heart"></i> by Johnny</p>
+    </div>
+
+    <script>
+        // 原有的 tab 切換功能
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            // 移除所有 tab 的 active 樣式
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            // 新增目前點選的 tab 的 active 樣式
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // 表單提交功能
+        const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "訊息已送出！"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+
+        // 平滑滾動到錨點
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
