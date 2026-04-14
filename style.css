@@ -1,0 +1,153 @@
+/* 上方菜單 */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: white;
+  font-size: 30px; /*字體大小*/
+  gap: 30px;
+
+}
+
+
+
+/* 上方描述 */
+.header-title {
+  text-align: center;
+  margin-top: 80px;   /* 避開 fixed menu */
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+/* 中間區域 */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+.sidebar {
+  width: 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 每個區塊變卡片 */
+.sidebar-section {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+/* hover 提升感 */
+.sidebar-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* 標題 */
+.sidebar-section h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: #333;
+  border-left: 4px solid #007bff;
+  padding-left: 8px;
+}
+
+/* list */
+.sidebar-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-section li {
+  margin-bottom: 6px;
+}
+
+/* link */
+.sidebar-section a {
+  text-decoration: none;
+  color: #444;
+  transition: 0.2s;
+}
+
+.sidebar-section a:hover {
+  color: #007bff;
+  padding-left: 4px;
+}
+
+
+
+/* 文章本體 */
+.content {
+  flex: 1;
+  padding: 20px;
+
+  /* 重點：讓文章垂直排列 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 垂直卡片 */
+.card-vertical {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  transition: 0.2s;
+}
+
+/* hover 效果 */
+.card-vertical:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+/* 標題 */
+.card-title {
+  margin: 0 0 10px;
+}
+
+/* 日期 */
+.card-meta {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* 摘要 */
+.card-summary {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* 閱讀更多 */
+.read-more {
+  font-size: 14px;
+  color: #007bff;
+}
